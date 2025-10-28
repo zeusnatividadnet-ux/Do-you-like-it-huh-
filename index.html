@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do you like my gift, meow? 🐾</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating Background Elements -->
+    <div id="floatingElements"></div>
+
+    <div class="container">
+        <!-- Screen 1: Login -->
+        <div id="loginScreen" class="screen active">
+            <div class="cat-gif" id="loginCat">
+                <img src="images/login-cat.gif" alt="Welcome cat">
+            </div>
+            <h1>Hello is it you? 🐾</h1>
+            <p>Enter your name </p>
+            <input type="text" id="nameInput" placeholder="Your name..." maxlength="20">
+            <div class="error-message" id="errorMessage"></div>
+            <br><br>
+            <button class="btn-primary" onclick="startGame()">Enter ✨</button>
+        </div>
+
+        <!-- Screen 2: Question -->
+        <div id="questionScreen" class="screen">
+            <div class="cat-gif" id="questionCat">
+                <img src="images/troll-cat.gif" alt="Mischievous cat">
+            </div>
+            <h1>Do you like my gift?</h1>
+            <p id="questionText">Click an answer 💝</p>
+            <div class="button-container">
+                <button class="btn-yes" onclick="selectYes()">Yes! 💖</button>
+                <button class="btn-no" id="noBtn" onclick="handleNoClick()">No</button>
+            </div>
+        </div>
+
+        <!-- Screen 3: Happy Ending -->
+        <div id="happyScreen" class="screen">
+            <div class="cat-gif" id="happyCat">
+                <img src="images/happy-cat.gif" alt="Happy cat">
+            </div>
+            <h1>Yay! 💕</h1>
+            <div class="message-box">
+                <div class="typewriter" id="typewriter"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="heart-rain" id="heartRain"></div>
+
+    <!-- Music Toggle Button -->
+    <button class="music-toggle" id="musicToggle" onclick="toggleMusic()">🔇</button>
+
+    <!-- Audio Elements -->
+    <audio id="clickSound" preload="auto">
+        <source src="sounds/click.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="meowSound" preload="auto">
+        <source src="sounds/meow.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="successSound" preload="auto">
+        <source src="sounds/success.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="bgMusic" loop preload="auto">
+        <source src="sounds/background-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
