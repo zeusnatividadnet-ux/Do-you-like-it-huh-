@@ -187,10 +187,10 @@ function typeMessage() {
         '',
         'Matagal na rin mula noong huling nagkausap tayo,',
         'at aaminin ko, ako \'yung nagkamali nahihiya kasi ako,',
-        'kaya lumayo na lang.',
+        'kaya lumayo na lang ako.',
         '',
         'Kung may pagkakataon na parang iniwasan kita',
-        'o naging awkward ako, sorry ha.',
+        ' o naging awkward ako, sorry ha.',
         '',
         'Matagal na talaga ako may gift nahihiya lang ako',
         'na ibigay sayo.',
@@ -201,7 +201,7 @@ function typeMessage() {
         'May 3 gift ako sayo, pero sana ma-appreciate mo',
         'at mapatawad ako.',
         '',
-        'Your kindness makes the world brighter,',
+        'Take note that your kindness makes the world brighter,',
         'and I\'m so grateful to have you in my life.',
         '',
         'This little gift is my way of saying:',
@@ -209,7 +209,7 @@ function typeMessage() {
         '',
         'Keep being amazing! ✨',
         '',
-        '— <a href="https://www.facebook.com/share/1BFWiXpaav/" target="_blank">Zeus</a> 🐾'
+        '— <a href="https://www.facebook.com/share/1BFWiXpaav/" target="_blank">Zeus click me!</a> 🐾'
     ];
 
     const typewriterEl = document.getElementById('typewriter');
